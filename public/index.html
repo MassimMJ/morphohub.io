@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpho Hub</title>
+    <link rel="stylesheet" href="/css/style.css">    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Morpho Hub</div>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home" class="active">Home</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="news">News</a></li>                <li><a href="#" data-page="services">Services</a></li>
+                <li><a href="#" data-page="upload">Upload</a></li>
+                <li><a href="#" data-page="login">Login</a></li>
+                <li><a href="#" data-page="mydata">My History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="banner">
+                <h1>Welcome to Morpho Hub</h1>
+            </div>
+            <div class="intro">
+                <p>MorphoHub is an innovative digital repository and collaborative platform designed to centralize, standardize, and share Computed Tomography (CT) data within the biological sciences. Recognizing the global expansion of CT applications and the current fragmentation of digital collections, MorphoHub steps in to bridge this gap, fostering research potential and increasing the visibility of scientific heritage worldwide. Explore our collection of 3D models, access specialized services, and contribute to the growing database of morphological specimens.</p>
+            </div>            <div class="featured-service">
+                <div class="featured-image">
+                    <img src="/images/homepage.jpg" alt="Specimen Analysis and Segmentation Service">
+                </div>
+                <div class="featured-text">
+                    <h2>Advanced Specimen Analysis</h2>
+                    <p>Access cutting-edge segmentation and analysis tools for your morphological specimens. Our expert team uses state-of-the-art technology to provide detailed insights into specimen structure and characteristics.</p>
+                </div>
+            </div>
+        </section>        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="about-container">
+                <div class="about-section">
+                    <h2>About Morpho Hub</h2>
+                    <p>MorphoHub is an platform we've been developing to help centralize and standardize Computed Tomography (CT) data within the biological sciences. We've noticed that as CT use grows globally, digital collections can sometimes be a bit fragmented. Our goal with MorphoHub is to offer a more connected space, hoping to support research and highlight scientific data from around the world.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Key Focus Areas</h2>
+                    
+                    <h3>Specialized Digital Curation</h3>
+                    <p>We're working to ensure that CT data is organized and standardized, following established international guidelines like Darwin Core. This helps make sure the information is complete and can be easily found and used by researchers everywhere, aiming for better data integrity and compatibility.</p>
+
+                    <h3>Collaborative Business Model</h3>
+                    <p>MorphoHub includes a marketplace feature that we hope will be helpful for both institutions and individual researchers. We envision universities and research centers with CT equipment (like micro-CT scanners) being able to offer their scanning and data processing services (such as segmentation using specialized software). Our hope is that this can help institutions utilize their equipment more effectively. For researchers who might not have access to these facilities, they could potentially connect with specialized technicians for services like 3D rendering or quantitative analysis, which could assist their morphological studies.</p>
+
+                    <h3>Legal Compliance</h3>
+                    <p>We're committed to building MorphoHub with respect for legal and ethical standards. This involves considering relevant regulations for accessing biodiversity data, aiming for compliance with international agreements like the Convention on Biological Diversity (CBD) and the Nagoya Protocol, and being mindful of paleontological heritage laws in various places. We're also working on a system for managing access to sensitive materials and recording the origin of digitized specimens, always striving for ethical and lawful operations.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>About the Creator</h2>
+                    <div class="creator-profile">
+                        <div class="creator-image">
+                            <img src="/images/jayme.jpg" alt="Jayme Massim">
+                        </div>
+                        <div class="creator-info">
+                            <p>MorphoHub was conceived and developed by Jayme Massim. With a Ph.D. in Ecology and Evolution, I've aimed to bring my understanding of biological research needs to this project. My experience of 10 years in Tomography Imaging Technician has also helped shape the platform, as I've tried to build something that's useful and grounded in practical scientific work.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <p>If you'd like to know more or have any questions, please feel free to reach out:</p>
+                        <p>Jayme Massim</p>
+                        <p>Phone: +55 11 94566-74173</p>
+                        <p>massim.jayme@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News/Models Page -->
+        <section id="news" class="page">
+            <h2>Latest Models</h2>
+            <div id="models-grid" class="models-grid">
+                <!-- Models will be loaded dynamically -->
+            </div>
+        </section>        <!-- Services Page -->
+        <section id="services" class="page">
+            <div class="services-section">
+                <h2>Tomography Services</h2>
+                <div class="tomography-labs-container">
+                    <!-- Tomography labs will be loaded dynamically -->
+                </div>
+            </div>
+            
+            <div class="services-section">
+                <h2>Technical Analysis Services</h2>
+                <div class="technicians-container">
+                    <!-- Technicians will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div id="purchase-form" class="modal">
+                <!-- Purchase form will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Login Page -->
+        <section id="login" class="page">
+            <h2>Login / Register</h2>
+            <div class="auth-container">
+                <form id="auth-form">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>        <!-- Upload Page -->
+        <section id="upload" class="page">
+            <h2>Upload Specimen</h2>
+            <div class="upload-container">
+                <form id="upload-form" class="upload-form">
+                    <div class="form-group">
+                        <label for="specimenName">Specimen Name*</label>
+                        <input type="text" id="specimenName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="catalogNumber">Catalog Number*</label>
+                        <input type="text" id="catalogNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="museum">Museum*</label>
+                        <input type="text" id="museum" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="institution">Institution*</label>
+                        <input type="text" id="institution" required>
+                    </div>
+                    
+                    <div class="form-group coordinates">
+                        <label>Geographic Coordinates*</label>
+                        <div class="coord-inputs">
+                            <input type="number" id="latitude" placeholder="Latitude" step="0.0001" required>
+                            <input type="number" id="longitude" placeholder="Longitude" step="0.0001" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specimenImage">Specimen Image*</label>
+                        <input type="file" id="specimenImage" accept="image/*" required>
+                        <div class="file-preview" id="imagePreview"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="darwinCore">Darwin Core Metadata (TXT file)*</label>
+                        <input type="file" id="darwinCore" accept=".txt" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit for Review</button>
+                    <h2>Specialized Digital Curation</h2>
+                    <div class="content">
+                        <p>We ensure that all CT data is meticulously organized and standardized, adhering to international protocols such as Darwin Core. This commitment guarantees that information is complete, easily discoverable, and readily usable by researchers worldwide, enhancing data integrity and interoperability.</p>
+                    </div>
+                </form>
+            </div>
+        </section>        <!-- My History Page -->
+        <section id="mydata" class="page">
+            <h2>My History</h2>
+            <div class="data-container">
+                <div id="downloads" class="history-section">
+                    <h3>Downloaded Models</h3>                    <div class="item-list">
+                        <div class="history-item">
+                            <div class="history-header">
+                                <strong>Alcatrazes Lancehead (Bothrops alcatraz)</strong>
+                                <span class="date">June 14, 2025</span>
+                            </div>
+                            <div class="history-details">
+                                <span class="label">Institution:</span> Museu de Zoologia da USP (MZUSP)<br>
+                                <span class="label">Type:</span> CT Scan & Darwin Core Metadata<br>
+                                <span class="label">Specimen ID:</span> MZUSP-H-002
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="purchases" class="history-section">
+                    <h3>Service History</h3>
+                    <div class="item-list">
+                        <div class="history-item">
+                            <div class="history-header">
+                                <strong>Tomography Scan Service</strong>
+                                <span class="date">April 10, 2025</span>
+                            </div>
+                            <div class="history-details">
+                                <span class="label">Provider:</span> USP Imaging Lab<br>
+                                <span class="label">Equipment:</span> Phoenix v|tome|x M<br>
+                                <span class="label">Status:</span> <span class="status-completed">Completed</span><br>
+                                <span class="label">Details:</span> High-resolution scan of specimen MZUSP-123<br>
+                                <span class="label">Cost:</span> $120
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-header">
+                                <strong>Technical Analysis Service</strong>
+                                <span class="date">May 1, 2025</span>
+                            </div>
+                            <div class="history-details">
+                                <span class="label">Provider:</span> Dr. Ana Silva<br>
+                                <span class="label">Type:</span> Morphological Analysis<br>
+                                <span class="label">Status:</span> <span class="status-in">In Progress</span><br>
+                                <span class="label">Details:</span> Comparative analysis of viper specimens<br>
+                                <span class="label">Cost:</span> $450
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-header">
+                                <strong>Tomography Scan Service</strong>
+                                <span class="date">June 10, 2025</span>
+                            </div>
+                            <div class="history-details">
+                                <span class="label">Provider:</span> UNICAMP Advanced Lab<br>
+                                <span class="label">Equipment:</span> Bruker SkyScan 1272<br>
+                                <span class="label">Status:</span> <span class="status-scheduled">Scheduled</span><br>
+                                <span class="label">Details:</span> Micro-CT scanning session for new specimens<br>
+                                <span class="label">Cost:</span> $150
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
