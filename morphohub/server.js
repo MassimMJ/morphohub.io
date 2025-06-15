@@ -273,7 +273,7 @@ app.get('/api/models/:id/metadata', (req, res) => {
     }
     
     res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Disposition', `attachment; filename="${model.name.toLowerCase().replace(/\s+/g, '_')}_metadata.txt"`);
+    res.setHeader('Content-Disposition', `attachment; filename="${encodeURIComponent(model.name.toLowerCase().replace(/\s+/g, '_'))}_metadata.txt"`);
     res.send(model.darwinCore);
 });
 
